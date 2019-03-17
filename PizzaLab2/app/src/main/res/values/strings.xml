@@ -18,4 +18,6 @@
     <string name="order">Zamów</string>
     <string name="your_pizza">Nazwij pizzę:</string>
     <string name="back">Powrót</string>
+    <string name="cheese">Ser</string>
+    <string name="olives">Oliwki</string>
 </resources>

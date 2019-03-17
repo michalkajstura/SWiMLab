@@ -8,7 +8,7 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.lab2.Ingredient;
+import com.example.lab2.ingredients.Ingredient;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,10 +25,7 @@ public class OrderActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             List<Ingredient> ingredients =
-                    extras.getStringArrayList(MainActivity.PIZZA_INGREDIENTS)
-                        .stream()
-                        .map(Ingredient::valueOf)
-                        .collect(Collectors.toList());
+                    getIntent().getParcelableArrayListExtra(MainActivity.PIZZA_INGREDIENTS);
 
             GridView gridView = findViewById(R.id.ingredientGrid);
             gridView.setAdapter(new CustomGridAdapter(getApplicationContext(), ingredients));

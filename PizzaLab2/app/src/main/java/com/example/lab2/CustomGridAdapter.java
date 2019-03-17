@@ -7,7 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-import com.example.lab2.Ingredient;
+import com.example.lab2.ingredients.Ingredient;
 
 import java.util.List;
 
@@ -54,24 +54,6 @@ public class CustomGridAdapter extends BaseAdapter {
     }
 
     private Integer convertIngredientToImage(Ingredient ingredient) {
-        if (ingredient.equals(Ingredient.BROCCOLI))
-            return R.drawable.brocolli;
-        if (ingredient.equals(Ingredient.GARLIC))
-           return R.drawable.garlic;
-        if (ingredient.equals(Ingredient.ONION))
-           return R.drawable.onion;
-        if (ingredient.equals(Ingredient.PINEAPPLE))
-           return R.drawable.pineapple;
-        if (ingredient.equals(Ingredient.PEPPERONI))
-           return R.drawable.pepperoni;
-        if (ingredient.equals(Ingredient.CHILLI))
-            return R.drawable.chilli;
-        if (ingredient.equals(Ingredient.SHROOM))
-            return R.drawable.shroom;
-       if (ingredient.equals(Ingredient.CORN))
-            return R.drawable.corn;
-       if (ingredient.equals(Ingredient.SAUCE))
-            return R.drawable.sauce;
-        return R.drawable.qm;
+        return ingredient.getImage();
     }
 }
