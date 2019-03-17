@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pizzas</string>
+    <string name="create_pizza">Stwórz swoją pizzę</string>
+    <string name="pizza_name">Nazwa twojej pizzy</string>
+    <string name="crust">Rodzaj ciasta</string>
+    <string name="sauce">Z sosem?</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="chilli">Chilli</string>
+    <string name="halapeno">Halapeno</string>
+    <string name="protobello">Pieczarki</string>
+    <string name="broccolli">Brokuły</string>
+    <string name="pineapple">Ananas</string>
+    <string name="onion">Cebula</string>
+    <string name="corn">Kukurydza</string>
+    <string name="garlic">Czosnek</string>
+    <string name="thick">Grube</string>
+    <string name="lean">Chude</string>
+    <string name="order">Zamów</string>
+    <string name="your_pizza">Nazwij pizzę:</string>
+    <string name="back">Powrót</string>
+</resources>
