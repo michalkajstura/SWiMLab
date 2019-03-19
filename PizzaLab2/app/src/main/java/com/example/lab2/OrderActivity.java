@@ -11,11 +11,9 @@ import android.widget.Toast;
 import com.example.lab2.ingredients.Ingredient;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class OrderActivity extends AppCompatActivity {
 
-    private static String DEFAULT_NAME = "Domyślna nazwa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +30,10 @@ public class OrderActivity extends AppCompatActivity {
         }
 
         Button backButton = findViewById(R.id.back_btn);
-        backButton.setOnClickListener(view -> onBackPressed());
+        backButton.setOnLongClickListener(view -> {
+            onBackPressed();
+            return true;
+        });
     }
 
     public void orderOnClick(View view) {

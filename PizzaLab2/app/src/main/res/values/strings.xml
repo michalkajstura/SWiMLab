@@ -20,4 +20,5 @@
     <string name="back">Powrót</string>
     <string name="cheese">Ser</string>
     <string name="olives">Oliwki</string>
+    <string name="new_pizza_name">Nazwa</string>
 </resources>
